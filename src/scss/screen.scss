@@ -110,7 +110,7 @@ Vertical navigation
 
 .cd-vertical-nav {
 	position: fixed;
-	z-index: 1;
+	z-index: 3;
 	right: 5%;
 	bottom: 30px;
 	width: 90%;
@@ -324,6 +324,8 @@ Vertical navigation
 	}
 }
 
+
+
 /* -------------------------------- 
 
 Content Sections - basic style
@@ -440,21 +442,35 @@ no-js
 	}
 }
 
-
 // Socialmedia
+
 
 .social-icons{
 	.icons {
-		display: inline-block;
+		display: block;
 		font-size: 3rem;
 		padding: 2rem;
 	}
 	li {
 		display:inline-block;
-		padding-left: 40px;
 	}
 }
 
+@include MQ(M) {
+	.social-icons{
+		.icons {
+			display: inline-block;
+			font-size: 3rem;
+			padding: 2rem;
+		}
+		li {
+			display:inline-block;
+			padding-left: 40px;
+		}
+	}
+}
+
+// etc.
 small {
 	font-size: 1rem;
 }
@@ -468,26 +484,29 @@ sup {
 
 /* Some basic styling to notify users
    about the tooltips*/
-.tooltip {
-	text-decoration: none;
-}
 
-.tooltip:hover {
-	position: relative;
-}
+@include MQ(M) {
+	.tooltip {
+		text-decoration: none;
+	}
 
-/* Tooltip on Top */
-.tooltip-top[data-tooltip]:hover:after {
-	content: attr(data-tooltip);
-	padding: 4px 8px;
-	position: absolute;
-	left: 0;
-	bottom: 200%;
-	white-space: nowrap;
-	z-index: 20;
+	.tooltip:hover {
+		position: relative;
+	}
 
-	background-color: #000;
-	color: #fff;
+	/* Tooltip on Top */
+	.tooltip-top[data-tooltip]:hover:after {
+		content: attr(data-tooltip);
+		padding: 4px 8px;
+		position: absolute;
+		left: 0;
+		bottom: 200%;
+		white-space: nowrap;
+		z-index: 20;
+
+		background-color: #000;
+		color: #fff;
+	}
 }
 
 // custom background for section 1
@@ -513,3 +532,8 @@ sup {
 	filter: blur(2px);
 	z-index: 1;
 }
+
+.white {
+	color: #efefef;
+}
+
