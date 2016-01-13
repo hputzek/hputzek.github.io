@@ -351,7 +351,6 @@ Content Sections - basic style
 	}
 
 	h1, h2 {
-		width: 90%;
 		margin: 0 auto;
 		font-size: 2.4rem;
 		line-height: 1.4;
@@ -384,10 +383,11 @@ Content Sections - basic style
 .cd-scroll-down {
 	position: absolute;
 	@include center(x);
-	bottom: 20px;
-	width: 44px;
-	height: 44px;
-	background: url(../img/cd-arrow-bottom.svg) no-repeat center center;
+	bottom: 90px;
+	width: 90px;
+	height: 90px;
+	background: url(../img/cd-arrow-bottom.svg) no-repeat center center #F2F2F2;
+	border-radius: 100%;
 }
 
 /* -------------------------------- 
@@ -532,7 +532,10 @@ sup {
 	z-index: 1;
 }
 
-.white {
+.white-text {
 	color: #efefef;
+	background: rgba(0,0,0,0.3);
+	display: block;
+	padding: 10px;
 }
 
