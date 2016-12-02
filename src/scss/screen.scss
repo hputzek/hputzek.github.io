@@ -347,7 +347,7 @@ Content Sections - basic style
 		/* vertically align <div> inside <section> */
 		display: table-cell;
 		vertical-align: middle;
-		text-align: center;
+
 	}
 
 	h1, h2 {
@@ -355,10 +355,17 @@ Content Sections - basic style
 		margin: 0 auto;
 		font-size: 2.4rem;
 		line-height: 1.4;
+		max-width: 680px;
 
 		b {
 			color: tint($color-1, 15%);
 		}
+	}
+
+	small {
+		display: block;
+		max-width: 680px;
+		margin: 0  auto;
 	}
 
 	p {
@@ -384,10 +391,11 @@ Content Sections - basic style
 .cd-scroll-down {
 	position: absolute;
 	@include center(x);
-	bottom: 20px;
-	width: 44px;
-	height: 44px;
-	background: url(../img/cd-arrow-bottom.svg) no-repeat center center;
+	bottom: 90px;
+	width: 90px;
+	height: 90px;
+	background: url(../img/cd-arrow-bottom.svg) no-repeat center center #F2F2F2;
+	border-radius: 100%;
 }
 
 /* -------------------------------- 
@@ -445,6 +453,9 @@ no-js
 
 
 .social-icons{
+	margin-top: 60px;
+	text-align: center;
+	max-width: 90%;
 	.icons {
 		display: block;
 		font-size: 3rem;
@@ -458,12 +469,10 @@ no-js
 @include MQ(M) {
 	.social-icons{
 		.icons {
-			display: inline-block;
 			font-size: 3rem;
 			padding: 2rem;
 		}
 		li {
-			display:inline-block;
 			padding-left: 40px;
 		}
 	}
@@ -532,8 +541,44 @@ sup {
 	z-index: 1;
 }
 
-.white {
+.white-text {
 	color: #efefef;
+	background: rgba(0,0,0,0.3);
+	display: block;
+	padding: 10px;
+	max-width: 100% !important;
+	width: 100% !important;
+}
+
+.center {
+	text-align: center;
+}
+
+.twitter-feed-headline {
+	margin-top: 50px !important;
+	margin-bottom: 20px !important;
+}
+
+.last-wrapper {
+	padding-bottom: 30px;
+}
+
+footer {
+	margin: 15px;
+	text-align: center;
+}
+
+.twitter-feed {
+	iframe {
+		max-width: 90% !important;
+	}
+}
+
+.blog-decorator {
+	background: linear-gradient(to bottom, #efefef 0%, #fff 80%);
+	padding-bottom: 2px;
+	border-bottom: 2px solid;
+	color: $color-2;
 }
 
 // mesh
