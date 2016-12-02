@@ -110,7 +110,7 @@ Vertical navigation
 
 .cd-vertical-nav {
 	position: fixed;
-	z-index: 3;
+	z-index: 4;
 	right: 5%;
 	bottom: 30px;
 	width: 90%;
@@ -517,7 +517,7 @@ sup {
 .content-over-image {
 	position: relative;
 	min-height: 70%;
-	z-index: 2;
+	z-index: 3;
 }
 
 .image-container {
@@ -525,7 +525,7 @@ sup {
 	left: 0;
 	top: 0;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	background-image: url("../img/background.jpg");
 	background-size: cover;
 	filter: blur(2px);
@@ -536,3 +536,13 @@ sup {
 	color: #efefef;
 }
 
+// mesh
+
+#mesh-canvas {
+	position: absolute;
+	display: block;
+	top: 45%;
+	left: 0;
+	z-index: 2;
+	mix-blend-mode: overlay;
+}
