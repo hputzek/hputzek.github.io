@@ -394,7 +394,7 @@ Content Sections - basic style
 	bottom: 90px;
 	width: 90px;
 	height: 90px;
-	background: url(../img/cd-arrow-bottom.svg) no-repeat center center #F2F2F2;
+	background: url(../img/cd-arrow-bottom.svg) no-repeat center center rgba(255,255,255,0.3);
 	border-radius: 100%;
 }
 
@@ -552,11 +552,6 @@ sup {
 
 .center {
 	text-align: center;
-}
-
-.twitter-feed-headline {
-	margin-top: 50px !important;
-	margin-bottom: 20px !important;
 }
 
 .last-wrapper {

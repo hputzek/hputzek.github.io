@@ -43,7 +43,6 @@ module.exports = function(grunt) {
                 },
                 src: '<%= config.src %>/index.html',
                 dest: '<%= config.dist %>/index.html'
-
             }
         },
 
