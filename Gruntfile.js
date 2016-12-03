@@ -38,7 +38,7 @@ module.exports = function(grunt) {
         inline: {
             dist: {
                 options:{
-                    uglify: true,
+                    uglify: false,
                     cssmin: true
                 },
                 src: '<%= config.src %>/index.html',
